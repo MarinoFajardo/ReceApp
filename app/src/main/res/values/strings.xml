@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ReceApp</string>
+    <string name="imagen_receta">Imagen de la receta</string>
+    <string name="btn_visualizar_receta">Botón para visualizar una receta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagen_ver_receta">Imagen visualizada al mostrar la receta al completo</string>
+    <string name="ingredientes">Ingredientes:</string>
+    <string name="pasos">Pasos:</string>
+    <string name="comenzar_receta">Comenzar Receta</string>
+    <string name="filtro_de_recetas">Filtro de recetas</string>
+    <string name="view_pager">View Pager para mostrar los pasos</string>
+    <string name="asistente">boton pa iniciar el asistente de voz</string>
+    <string name="anterior">Anterior</string>
+</resources>

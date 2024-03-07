@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_alergenos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alergenos:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/alergenos_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_marisco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marisco" />
+
+        <CheckBox
+            android:id="@+id/checkbox_gluten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gluten" />
+
+        <CheckBox
+            android:id="@+id/checkbox_frutos_secos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frutos" />
+
+        <CheckBox
+            android:id="@+id/checkbox_huevos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huevos" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Receta:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_entrante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrante" />
+
+        <RadioButton
+            android:id="@+id/radio_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Principal" />
+
+        <RadioButton
+            android:id="@+id/radio_postre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postre" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Aplicar Filtro" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Limpiar Filtro"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PreparacionActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/view_pager" />
+
+    <LinearLayout
+        android:id="@+id/linear_temp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/temporizador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_gravity="center_horizontal"
+            android:textSize="50dp" />
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Stop"
+            android:drawableLeft="@drawable/baseline_stop_24"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1.2"
+            android:text="Close"
+            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#4b86b4"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/baseline_arrow_back_24"/>
+
+        <Button
+            android:id="@+id/boton_asistente"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.6"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/asistente"
+            app:icon="@drawable/baseline_record_voice_over_24"
+            app:iconGravity="start"/>
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1.2"
+            android:text="Next"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#4b86b4"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/baseline_arrow_forward_24"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
